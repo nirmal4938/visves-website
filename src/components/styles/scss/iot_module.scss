@@ -1,0 +1,168 @@
+.iot-module-p-page {
+  .card-color {
+    background-color: #f9f9f9 !important;
+  }
+
+  .img-class {
+    margin-top: 40px !important;
+    margin-bottom: 28px;
+  }
+
+  .related-products {
+    height: 457px;
+  }
+
+  //hero page
+
+  .main_hero {
+    background-color: #111536;
+    height: 348px;
+    position: relative;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    /* Ensures absolute positioning within this container */
+  }
+
+  .title {
+    color: #351ee0;
+  }
+
+  .bg-image {
+    background-image: url("../../assets/images/products/millmachinary/Vector.png");
+    background-size: cover;
+    background-position: center;
+    height: 90%;
+    /* Fill the entire height of the parent */
+    width: 90%;
+    /* Fill the entire width of the parent */
+    position: absolute;
+    /* Position it relative to the parent */
+    top: 0;
+    /* Position it at the top of the parent */
+    left: 0;
+    /* Position it at the left of the parent */
+  }
+
+  .enquire {
+    background: #111536;
+    color: white;
+    height: 610px;
+  }
+
+  .bg-image-circuit {
+    background-image: url("../../assets/images/products/millmachinary/bg-circuit.png"),
+      /* First image on the left */
+        url("../../assets/images/products/millmachinary/bg-circuit1.png");
+    /* Third image on the right */
+    background-size: auto;
+    /* Each image maintains its original size */
+    background-position: left, right;
+    /* Position the first image on the left and the third image on the right */
+    background-repeat: no-repeat;
+    /* Prevent background images from repeating */
+  }
+  .feature p {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+  }
+  .circle {
+    width: 30px;
+    /* Adjust as needed */
+    height: 30px;
+    /* Adjust as needed */
+    background-color: #351ee0;
+    /* Background color of the circle */
+    border-radius: 50%;
+    /* Makes the element circular */
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+    margin-bottom: 10px;
+    /* Adjust spacing between each feature */
+  }
+
+  .tick-icon {
+    width: 20px;
+    /* Adjust as needed */
+    height: auto;
+    /* Maintains aspect ratio */
+  }
+
+  .feature {
+    display: flex;
+    /* Use flexbox */
+    align-items: flex-start;
+    /* Align items to the start of the flex container (top of each column) */
+    margin-bottom: 20px;
+    /* Adjust spacing between each feature */
+  }
+
+  .feature h6 {
+    margin: 0;
+    /* Remove default margin */
+    margin-left: 10px;
+    /* Adjust spacing between circle and text */
+  }
+
+  .text-enquire {
+    background: linear-gradient(to bottom, #351ee0, #3bd4e9, #3f74ef);
+    -webkit-background-clip: text;
+    /* For webkit browsers */
+    background-clip: text;
+    /* Standard */
+    color: transparent;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    /* Fallback color for browsers that don't support background-clip */
+  }
+
+  .card-font {
+    width: 100%;
+    top: 2334.5px;
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    background: linear-gradient(91.01deg, #351ee0 0%, #3f74ef 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  @media (max-width: 768px) {
+    .enquire {
+      height: 1100px;
+    }
+  }
+
+  .brand-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 0 29px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(105deg, #351ee0, #3f74ef);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 201px;
+    top: -80px;
+    left: -30px;
+    position: relative;
+
+    img {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+}

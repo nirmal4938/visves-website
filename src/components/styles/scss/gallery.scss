@@ -1,0 +1,45 @@
+.gallery-page {
+  .hero-section {
+    height: 442px;
+    background-image: url("../../assets/images/gallery/gallery_hero_bg1.png"),
+      /* First image on the left */
+        url("../../assets/images/gallery/gallery_hero_bg2.png");
+    /* Third image on the right */
+    background-size: auto;
+    /* Each image maintains its original size */
+    background-position: left, right;
+    /* Position the first image on the left and the third image on the right */
+    background-repeat: no-repeat;
+    /* Prevent background images from repeating */
+    background-color: #05092b;
+    .brand-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      padding: 0 29px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background-image: linear-gradient(105deg, #351ee0, #3f74ef);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      min-width: 201px;
+
+      img {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+  }
+  .gallery-section {
+    button {
+      width: max-content;
+      background-color: transparent !important;
+    }
+  }
+}

@@ -1,0 +1,186 @@
+.footer {
+  background-color: #05092b;
+  padding: 10px 0px;
+  margin-top: 150px;
+}
+
+.footer__logo {
+  max-width: 100%;
+}
+.footer-card-body {
+  padding: 5px !important;
+  img {
+    height: 116px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+.footer__desc {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.footer__links li {
+  margin-bottom: 10px;
+}
+
+.footer__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Responsive Adjustments */
+
+.icon-gap {
+  gap: 20px;
+}
+
+.custom-padding {
+  padding: 105px;
+  margin-bottom: -42px;
+  margin-top: -51px;
+  padding-top: 1px;
+}
+
+.card_section {
+  background-color: #351ee0 !important;
+  color: antiquewhite;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  top: -135px;
+}
+
+.footer-footer-card-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.input_box {
+  background-color: #351ee0;
+}
+
+.input-group {
+  height: 70px;
+  width: 70%;
+  background-color: #351ee0 !important;
+}
+
+.input_box {
+  box-shadow: none;
+  border-color: #ced4da;
+  background-color: transparent !important;
+  font-size: 20px;
+}
+
+.btn-white {
+  font-size: 12px;
+  padding: 0.375rem 0.75rem;
+}
+
+.button_function {
+  height: 60px;
+  width: 38%;
+}
+
+.input-group input,
+input::placeholder {
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 100%;
+  }
+
+  .custom-padding {
+    padding: 10px !important;
+  }
+
+  .line {
+    margin-top: 60px;
+  }
+
+  .footer-end {
+    padding: 20px;
+  }
+
+  .d-flex {
+    align-items: left;
+  }
+
+  .footer__content {
+    align-items: left;
+  }
+
+  .contact_media {
+    justify-content: left;
+  }
+
+  .footer__desc {
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+  }
+
+  .footer__links li {
+    margin-bottom: 5px;
+  }
+
+  .footer__title {
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+  }
+
+  .card-body {
+    padding: 5px !important;
+  }
+
+  .img_media {
+    width: 25%;
+
+    height: 25%;
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .footer-card-title {
+    font-size: 32px !important;
+
+    margin-top: -15px !important;
+  }
+
+  .input-group {
+    width: 90% !important;
+
+    padding-top: 10px;
+
+    margin-top: -5px !important;
+  }
+
+  .input-group input,
+  input::placeholder {
+    color: white !important;
+
+    font-size: 20px !important;
+  }
+
+  .button_function {
+    width: 35% !important;
+
+    height: 50px !important;
+  }
+}

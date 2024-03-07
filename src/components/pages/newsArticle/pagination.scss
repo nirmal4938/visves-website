@@ -1,0 +1,31 @@
+/* Pagination.scss */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin: 0 5px;
+
+    button {
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      color: #333;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+
+    &.active {
+      button {
+        background: linear-gradient(91.01deg, #351ee0 0%, #3f74ef 100%);
+        color: white;
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+$header-bg: #1c2042;
+$dropdown-bg: #28304e;
+.navbar {
+  background: #1c2042;
+  height: 100px;
+  .navbar-nav .nav-link.show {
+    color: rgb(160 161 169);
+  }
+  .navbar-brand {
+    padding: 0px 10px;
+  }
+  .dropdown-menu {
+    background-color: $dropdown-bg;
+    width: 215px;
+    top: 59px !important;
+    border: 1px solid #86bf4e;
+    padding: 0px;
+    .dropdown-item {
+      color: white;
+      padding: 10px;
+      &:hover {
+        background-color: darken($dropdown-bg, 10%);
+        border-radius: 10px;
+        color: rgb(160 161 169);
+      }
+
+      &.active {
+        background-color: darken($dropdown-bg, 20%);
+        border-radius: 10px;
+        color: rgb(160 161 169);
+      }
+    }
+  }
+  .navbar-toggler {
+    background: aliceblue;
+  }
+  .navbar-nav {
+    &.ms-auto {
+      margin-left: auto;
+    }
+
+    .nav-item {
+      margin-right: 10px;
+      // You can also add padding, font-size, etc. here
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: #555;
+      }
+    }
+  }
+}
+.navbar-main {
+  position: relative;
+  z-index: 1000;
+  nav {
+    padding: 0px 50px;
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    padding: 10px;
+  }
+  @media screen and (max-width: 767px) {
+    .navbar-brand img {
+      width: 200px;
+      height: auto;
+    }
+    .navbar {
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .dropdown-menu {
+    width: 100% !important;
+  }
+  .dropdown-item {
+    color: white;
+    padding: 10px;
+    &:hover {
+      background-color: darken($dropdown-bg, 10%) !important;
+      border-radius: 10px !important;
+      color: rgb(160 161 169) !important;
+    }
+
+    &.active {
+      background-color: darken($dropdown-bg, 20%);
+      border-radius: 10px;
+      color: rgb(160 161 169);
+    }
+  }
+}

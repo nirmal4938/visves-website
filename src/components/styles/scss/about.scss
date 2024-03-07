@@ -1,0 +1,464 @@
+.about-page {
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-section {
+    color: #111536;
+    background-color: white;
+    padding: 5px 0px;
+    .wire {
+      position: absolute;
+      img {
+        // max-width: 100%;
+        max-width: 70%;
+        position: relative;
+        top: 111px;
+      }
+    }
+
+    .text-about {
+      height: 30px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #05092b;
+    }
+    .hero-title {
+      width: 643px;
+      height: 185px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 90px;
+      letter-spacing: -1.48px;
+      color: #000000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .hero-p {
+      width: 580px;
+      height: 40px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.36px;
+      color: #05092b;
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-text-section {
+      text-align: start;
+    }
+
+    .hero-image {
+      // Ensure the container fills its parent
+      width: 100%;
+      height: 100%;
+
+      // Set image properties
+      img {
+        width: 100%; // Ensure the image fills its container horizontally
+        height: 100%; // Ensure the image fills its container vertically
+        object-fit: cover; // Cover the entire container, maintaining aspect ratio
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: start;
+    }
+    .hero-image {
+      width: 100%;
+      height: 400px;
+    }
+    .hero-text-section {
+      padding: 20px !important;
+    }
+    .module-device-section {
+      padding: 0px 5px !important;
+    }
+    .hero-title {
+      width: 100% !important;
+      height: auto !important;
+      font-size: 40px !important;
+      padding: 0;
+      margin: 0;
+    }
+    .hero-p {
+      width: 100% !important;
+      padding: unset !important;
+    }
+    .brand-button {
+      width: 100% !important;
+    }
+    .hero-image {
+      padding: 10px !important;
+    }
+    .module-device-title {
+      padding-left: 10px !important;
+      font-size: 30px !important;
+      margin: 70px 0px !important;
+    }
+    .upper-left-star {
+      max-width: 100% !important;
+      img {
+        width: 100% !important;
+      }
+    }
+    .lower-right-star {
+      max-width: 100% !important;
+      display: none !important;
+    }
+    .vision-card {
+      width: 90% !important;
+      bottom: -115px !important;
+    }
+    .vision-card-image {
+      top: -45px !important;
+      left: 45% !important;
+    }
+    .module-device-row {
+      gap: 10px !important;
+      padding: 50px 0px !important;
+      margin-bottom: 115px !important;
+    }
+    .director-mission-section {
+      background-color: #ffffff;
+      padding: 5px !important;
+    }
+    .director-card-img-left {
+      transform: translateX(-50%) !important;
+      left: 50% !important;
+      top: -100px !important;
+    }
+    .director-card-text {
+      padding: 10px 10px 10px 10px !important;
+    }
+    .inverted-start::before {
+      left: 7px !important;
+    }
+    .inverted-stop::after {
+      top: 300px !important;
+    }
+    .director-mission-section .title-main {
+      height: 157px !important;
+    }
+    .mission .mission-card-body {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    .vission .vission-card-body {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    .teams-section {
+      padding: 0px 10px !important;
+    }
+  }
+
+  .module-device-section {
+    padding: 0px 150px;
+    position: relative;
+    background-color: #111536;
+    min-height: 770px;
+    .module-device-title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      //   line-height: 90px;
+      letter-spacing: -1.48px;
+      color: #ffffff;
+      display: flex;
+      margin: 44px 0px;
+      padding-left: 91px;
+    }
+    .module-device-text {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: justify;
+      letter-spacing: -0.36px;
+      color: #ffffff;
+      margin: 20px 0;
+    }
+    .module-device-image {
+      margin: 10px 0;
+    }
+    .module-device-row {
+      gap: 0px;
+    }
+    .upper-left-star {
+      position: absolute;
+      left: 12px;
+    }
+    .lower-right-star {
+      position: absolute;
+      right: 0px;
+      max-height: 88px;
+      overflow: hidden;
+    }
+
+    .vision-card-image {
+      width: 70px;
+      height: 70px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: -50px;
+      left: 46%;
+    }
+    .vision-card {
+      background: linear-gradient(91.01deg, #351ee0 0%, #3f74ef 100%);
+      border-radius: 5px;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: max-content;
+      bottom: -40px;
+    }
+    .vision-card-body {
+      padding: 20px 10px;
+      color: #ffffff;
+      .card-text {
+        max-width: 60%;
+
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .director-mission-section {
+    padding: 100px 150px;
+    background-color: #ffffff;
+
+    .title-main {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      background: linear-gradient(91.01deg, #351ee0 0%, #3f74ef 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .director-mission-card {
+      .director-card-img-left {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: -100px;
+        top: 50%;
+        transform: translateY(-50%);
+        // width: max-content;
+      }
+      .director-card-text {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        color: #05092b;
+        position: relative;
+        padding: 10px 61px 10px 100px;
+      }
+      .director-card-body {
+        padding: 40px 0px;
+      }
+      .inverted-start::before,
+      .inverted-stop::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .inverted-start::before {
+        background-image: url("../../assets/images/aboutusImages/inverted_comma_start.svg");
+        left: 55px;
+        top: 1px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+      }
+
+      .inverted-stop::after {
+        right: 15px;
+        background-image: url("../../assets/images/aboutusImages/inverted_comma_stop.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        bottom: 7px;
+        top: 120px;
+      }
+    }
+    .mission {
+      .mission-card {
+        padding: 10px 25px;
+      }
+      .mission-card-title {
+        width: 85px;
+        height: 40px;
+        left: 364px;
+        top: 2558px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: -0.64px;
+        color: #05092b;
+      }
+      .mission-card-body {
+        width: 1132px;
+        height: 44px;
+        left: 364px;
+        top: 2618px;
+
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.36px;
+
+        color: #737373;
+      }
+    }
+    .vission {
+      .vission-card {
+        padding: 10px 25px;
+      }
+      .vission-card-title {
+        width: 85px;
+        height: 40px;
+        left: 364px;
+        top: 2558px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: -0.64px;
+        color: #05092b;
+      }
+      .vission-card-body {
+        width: 1132px;
+        height: 44px;
+        left: 364px;
+        top: 2618px;
+
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.36px;
+
+        color: #737373;
+      }
+    }
+  }
+
+  .teams-section {
+    padding: 100px 150px;
+    background-color: #111536;
+    padding-top: 100px;
+    .row {
+      justify-content: flex-start !important;
+      row-gap: 100px !important;
+    }
+    .founders-team-row {
+      .row-title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 30px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        background: linear-gradient(
+          268.16deg,
+          #5e4eda 67.02%,
+          #3f74ef 79.5%,
+          #3bbfe9 92.55%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        display: flex;
+        margin-bottom: 10px;
+      }
+    }
+    .advisory-card {
+      min-height: 220px !important;
+    }
+    .team-card {
+      min-height: 250px;
+      .team-card-title {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #05092b;
+      }
+      .team-card-img-top {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -28%;
+      }
+      .team-card-body {
+        bottom: 0px !important;
+        position: absolute;
+        width: 100%;
+      }
+      .team-card-text {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.36px;
+        color: #05092b;
+        margin: unset;
+        padding: unset;
+      }
+    }
+
+    .v-gap {
+      height: 100px;
+    }
+  }
+}
