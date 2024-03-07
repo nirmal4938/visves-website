@@ -14,7 +14,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
-  faInstagramSquare,
+  faInstagram,
   faTwitter,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
@@ -138,16 +138,18 @@ export const Footer = () => {
       </div> */}
 
       <footer className="footer text-white" style={{ width: "100%" }}>
-        <div className="flex-md-column">
-          <div class="w-75 mb-3 card_section border border-0 mx-auto d-block position-relative">
-            <div class="footer-card-body d-flex flex-sm-column flex-md-row p-5">
-              <img src={emailIcon} alt="Icon" className="img-fluid" />
 
-              <h1 class="footer-card-title ms-5 pt-3">
-                Stay Ahead with a Visves{" "}
+        <div className="flex-md-column">
+          <div className="w-75 mb-3 card_section border border-0 mx-auto  position-relative">
+
+            <div className="footer-card-body d-flex flex-lg-row  flex-column flex-sm-column  flex-md-column p-5">
+              <img src={emailIcon} alt="Icon" className="img-fluid img_media" />
+
+              <h1 className="footer-card-title pt-3">
+                Stay Ahead with a Visves
               </h1>
 
-              <div className="input-group mb-4 mt-5 ms-4 ">
+              <div className="input-group">
                 <input
                   type="text"
                   className="form-control input_box"
@@ -156,21 +158,20 @@ export const Footer = () => {
 
                 <button
                   type="button"
-                  class="btn btn-light btn-lg rounded end-0 m-1 position-absolute button_function"
+                  className="btn btn-light btn-lg rounded end-0 m-1  position-absolute button_function"
                 >
-                  Subscribe
-                  <FontAwesomeIcon
-                    icon={faPaperPlane}
-                    style={{ color: "#05092b" }}
-                    className="ms-2 "
-                  />
-                </button>
+                    Subscribe
+                      <FontAwesomeIcon
+                      icon={faPaperPlane}
+                      style={{ color: "#05092b" }}
+                      className="icon"/>
+                   </button>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="custom-padding">
+        <div className="custom-padding">
           <div className="row ms-5">
             <div className="col-md-3 col-md-3">
               <div className="footer__content">
@@ -187,17 +188,36 @@ export const Footer = () => {
                 </p>
 
                 <div className="d-flex ">
+                  
+                <a href="#" className="text-decoration-none">
                   <FontAwesomeIcon
                     icon={faFacebookF}
                     style={{ color: "#f7f7f8" }}
                     className="me-3"
                   />
+                  </a>
 
-                  <FontAwesomeIcon icon={faInstagramSquare} className="me-3" />
+                  <a href="#" className="text-decoration-none">    
+                  <FontAwesomeIcon 
+                  icon={faInstagram} 
+                  style={{ color: "#f7f7f8" }}
+                  className="me-3" />
+                  </a>
 
-                  <FontAwesomeIcon icon={faTwitter} className="me-3" />
+                  <a href="#" className="text-decoration-none">
+                  <FontAwesomeIcon 
+                  icon={faTwitter} 
+                  style={{ color: "#f7f7f8" }}
+                  className="me-3" />
+                   </a>
 
-                  <FontAwesomeIcon icon={faLinkedin} />
+                   <a href="#" className="text-decoration-none">
+                  <FontAwesomeIcon 
+                  icon={faLinkedin} 
+                  style={{ color: "#f7f7f8" }}
+                  className="me-3"/>
+                   </a>
+
                 </div>
               </div>
             </div>
@@ -208,7 +228,7 @@ export const Footer = () => {
 
                 <ul className="footer__links list-unstyled">
                   <li>
-                    <a class="nav-link link-light" href="#">
+                    <a class="nav-link link-light" href="/">
                       <FontAwesomeIcon
                         icon={faChevronRight}
                         style={{ color: "#351ee0" }}
@@ -219,7 +239,7 @@ export const Footer = () => {
                   </li>
 
                   <li>
-                    <a class="nav-link link-light" href="#">
+                    <a className="nav-link link-light" href="/about">
                       <FontAwesomeIcon
                         icon={faChevronRight}
                         style={{ color: "#351ee0" }}
@@ -230,7 +250,7 @@ export const Footer = () => {
                   </li>
 
                   <li>
-                    <a class="nav-link link-light" href="#">
+                    <a className="nav-link link-light" href="/products">
                       <FontAwesomeIcon
                         icon={faChevronRight}
                         style={{ color: "#351ee0" }}
@@ -241,7 +261,7 @@ export const Footer = () => {
                   </li>
 
                   <li>
-                    <a class="nav-link link-light" href="#">
+                    <a className="nav-link link-light" href="/services">
                       <FontAwesomeIcon
                         icon={faChevronRight}
                         style={{ color: "#351ee0" }}
@@ -252,7 +272,7 @@ export const Footer = () => {
                   </li>
 
                   <li>
-                    <a class="nav-link link-light" href="#">
+                    <a className="nav-link link-light" href="/news-article">
                       <FontAwesomeIcon
                         icon={faChevronRight}
                         style={{ color: "#351ee0" }}
@@ -263,7 +283,7 @@ export const Footer = () => {
                   </li>
 
                   <li>
-                    <a class="nav-link link-light" href="#">
+                    <a className="nav-link link-light" href="/contact-us">
                       <FontAwesomeIcon
                         icon={faChevronRight}
                         style={{ color: "#351ee0" }}
@@ -282,7 +302,7 @@ export const Footer = () => {
 
                 <ul className="footer__links list-unstyled">
                   <li>
-                    <a class="nav-link link-light" href="#">
+                    <a class="nav-link link-light" href="/products/iot-module">
                       <FontAwesomeIcon
                         icon={faChevronRight}
                         style={{ color: "#351ee0" }}
@@ -293,7 +313,7 @@ export const Footer = () => {
                   </li>
 
                   <li>
-                    <a class="nav-link link-light" href="#">
+                    <a className="nav-link link-light" href="/products/machinary-module">
                       <FontAwesomeIcon
                         icon={faChevronRight}
                         style={{ color: "#351ee0" }}
@@ -304,7 +324,7 @@ export const Footer = () => {
                   </li>
 
                   <li>
-                    <a class="nav-link link-light" href="#">
+                    <a className="nav-link link-light" href="/products/sensor-module">
                       <FontAwesomeIcon
                         icon={faChevronRight}
                         style={{ color: "#351ee0" }}
@@ -315,7 +335,7 @@ export const Footer = () => {
                   </li>
 
                   <li>
-                    <a class="nav-link link-light" href="#">
+                    <a className="nav-link link-light" href="/products/standard-interfacing-module">
                       <FontAwesomeIcon
                         icon={faChevronRight}
                         style={{ color: "#351ee0" }}
@@ -334,13 +354,14 @@ export const Footer = () => {
 
                 <ul className="footer__links list-unstyled">
                   <li class="d-flex">
+                  <a href="#" className="text-decoration-none">
                     <FontAwesomeIcon
                       icon={faLocationDot}
                       style={{ color: "#351ee0" }}
                       className="me-2 mt-1"
                     />
-
-                    <a class="nav-link link-light" href="#">
+                    </a>
+                    <a className="nav-link link-light" href="#">
                       Plot 446/A. Gate 3 ISCON Megacity, Bhavnagar-364001.
                       Gujarat
                     </a>
@@ -372,16 +393,16 @@ export const Footer = () => {
                     />
 
                     <div>
-                      <a class="nav-link link-light" href="#">
-                        sales@steves.com
+                      <a className="nav-link link-light" href="#">
+                        sales@visves.com
                       </a>
 
-                      <a class="nav-link link-light" href="#">
+                      <a className="nav-link link-light" href="#">
                         info@visves.com
                       </a>
 
-                      <a class="nav-link link-light" href="#">
-                        support@viaves.com
+                      <a className="nav-link link-light" href="#">
+                        support@visves.com
                       </a>
                     </div>
                   </li>
@@ -391,7 +412,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <hr class="container line"></hr>
+        <hr className="container line"></hr>
 
         <div className="d-flex flex-wrap justify-content-between align-items-center ms-md-5 me-md-5 footer-end">
           <p className="col-md-8 mb-3 mb-md-0">

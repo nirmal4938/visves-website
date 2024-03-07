@@ -57,38 +57,42 @@
   top: -135px;
 }
 
-.footer-footer-card-title {
+.footer-card-title {
   font-family: "Space Grotesk", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px!important;
+  margin-left: 48px!important;
 }
 
 .input_box {
   background-color: #351ee0;
 }
 
-.input-group {
-  height: 70px;
-  width: 70%;
+.input-group{
+  height: 30px!important;
+  width: 60% !important;
   background-color: #351ee0 !important;
+  position: relative;
+  top: 30px !important;
+  margin-left: 10px !important; 
 }
 
 .input_box {
   box-shadow: none;
   border-color: #ced4da;
   background-color: transparent !important;
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
-.btn-white {
-  font-size: 12px;
-  padding: 0.375rem 0.75rem;
-}
+
+
 
 .button_function {
-  height: 60px;
-  width: 38%;
+  height: 36px;
+  width: 40%;
+  padding: 0px !important;
+ 
 }
 
 .input-group input,
@@ -96,38 +100,34 @@ input::placeholder {
   color: white !important;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 576px) {
   .footer {
-    width: 100%;
+   width: 100%;
   }
-
-  .custom-padding {
-    padding: 10px !important;
+  .custom-padding{
+    padding: 5px !important;
   }
-
-  .line {
-    margin-top: 60px;
-  }
-
-  .footer-end {
-    padding: 20px;
-  }
-
-  .d-flex {
-    align-items: left;
+  
+.line{
+  margin-top: 60px;
+}
+  .footer-end{
+    padding:20px;
   }
 
   .footer__content {
     align-items: left;
+    
   }
 
-  .contact_media {
-    justify-content: left;
+  .contact_media{
+   justify-content: left;
+    
   }
-
+  
   .footer__desc {
     margin-top: 10px;
-
     margin-bottom: 10px;
   }
 
@@ -135,52 +135,133 @@ input::placeholder {
     margin-bottom: 5px;
   }
 
-  .footer__title {
-    font-size: 16px;
-
-    font-weight: bold;
-
-    margin-top: 20px;
+  .input-group input,
+  input::placeholder {
+    color: white !important;
+    font-size: medium !important;  
+    text-align: center !important; 
   }
 
-  .card-body {
-    padding: 5px !important;
+  .footer__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:20px;
+  }
+
+  .footer-card-body {
+    padding: 0px !important;
+      align-items: center!important;
   }
 
   .img_media {
-    width: 25%;
-
-    height: 25%;
-
-    margin-left: auto;
-
-    margin-right: auto;
+    width: 76px !important;
+    height: 76px!important;
+    
   }
 
   .footer-card-title {
-    font-size: 32px !important;
-
-    margin-top: -15px !important;
+    font-size: 25px !important;
+    position: relative;
+    left: 15px!important;
   }
 
   .input-group {
-    width: 90% !important;
+     width: 109% !important;
+     height: 20px !important;
+     position: relative;
+         top: 10px !important;
+     margin-bottom: 70px !important;
+  }
 
-    padding-top: 10px;
+  .button_function {
+    width: 190px !important;
+    height: 35px !important;
+    font-size: 16px!important;
+    position: relative;
+    top: 45px !important;
+    left: 20px !important;
+  }
 
-    margin-top: -5px !important;
+}
+ 
+@media (max-width: 1156px) {
+  .footer {
+   width: 100%;
+  }
+  .custom-padding{
+    padding: 5px !important;
+  }
+  
+.line{
+  margin-top: 60px;
+}
+  .footer-end{
+    padding:20px;
+  }
+
+  .footer__content {
+    align-items: left;
+    
+  }
+
+  .contact_media{
+   justify-content: left;
+    
+  }
+  
+  .footer__desc {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer__links li {
+    margin-bottom: 5px;
   }
 
   .input-group input,
   input::placeholder {
     color: white !important;
+    font-size: medium !important;  
+    text-align: center !important; 
+  }
 
-    font-size: 20px !important;
+  .footer__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:20px;
+  }
+
+  .footer-card-body {
+    padding: 0px !important;
+      align-items: center!important;
+  }
+
+  .img_media {
+    width: 76px !important;
+    height: 76px!important;
+    
+  }
+
+  .footer-card-title {
+    font-size: 25px !important;
+    margin-left: 20px!important;
+  }
+
+  .input-group {
+     width: 109% !important;
+     height: 20px !important;
+     position: relative;
+         top: 10px !important;
+     margin-bottom: 70px !important;
   }
 
   .button_function {
-    width: 35% !important;
-
-    height: 50px !important;
+    width: 190px !important;
+    height: 35px !important;
+    font-size: 16px!important;
+    position: relative;
+    top: 45px !important;
+    
   }
+
 }
