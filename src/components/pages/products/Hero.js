@@ -1,7 +1,11 @@
 import React from "react";
 import imagex from "../../assets/images/aboutusImages/about_us_hero_right_image.svg";
 import heroImage from "../../assets/images/hero_alt.png";
+import arrowRightIcon from "../../assets/images/img_.svg";
+
+import { useNavigate } from "react-router-dom";
 export const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className="hero-section">
       <div className="row d-flex">
@@ -16,9 +20,16 @@ export const Hero = () => {
               reduce your costs and give your business the competitive edge it
               needs to succeed.
             </p>
-            <button type="button" className="brand-button">
-              Our products
-            </button>
+            <div>
+              <button
+                type="button"
+                className="brand-button"
+                onClick={() => navigate("/products")}
+              >
+                Our products
+                <img src={arrowRightIcon} alt="Icon" className="btn-icon" />
+              </button>
+            </div>
           </div>
         </div>
         <div className="col-12 col-md-6">

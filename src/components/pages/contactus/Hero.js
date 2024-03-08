@@ -10,9 +10,9 @@ import img_ from "../../assets/images/contact/wire.svg";
 export const Hero = () => {
   return (
     <div className="hero-section">
-      <div className="wire">
+      {/* <div className="wire">
         <img src={img_} alt="Icon" />
-      </div>
+      </div> */}
       <div className="row d-flex">
         <div className="col-12 col-md-4">
           <div className="hero-text-section">
@@ -39,9 +39,10 @@ export const Hero = () => {
                 <div className="col-12 col-md-6">
                   <input
                     type="text"
+                    value="Your name"
+                    placeholder="Your name"
                     className="form-control form-control-lg"
                     name="name"
-                    placeholder="Your name"
                     onChange={(e) => console.log("value", e.target.value)}
                   />
                 </div>
@@ -49,8 +50,9 @@ export const Hero = () => {
                   <input
                     type="email"
                     name="email"
+                    value="Your email"
+                    placeholder="Your email"
                     className="form-control form-control-lg"
-                    placeholder="your email"
                     onChange={(e) => console.log("value", e.target.value)}
                   />
                 </div>
@@ -59,13 +61,16 @@ export const Hero = () => {
                     className="form-control form-control-lg"
                     id="exampleFormControlTextarea1"
                     rows="8"
+                    value="Your Message"
                     placeholder="Your Message"
+                    onChange={(e) => console.log("value", e.target.value)}
                   />
                 </div>
                 <div className="col-12">
                   <button
                     type="button"
-                    className="btn btn-primary btn-lg brand-button"
+                    className="btn btn-primary btn-lg submit-button"
+                    style={{ width: "100%" }}
                   >
                     SUBMIT NOW
                   </button>

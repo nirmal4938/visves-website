@@ -99,7 +99,7 @@ export const Navbar = () => {
           </ul>
           <form className="d-flex">
             <input
-              className="form-control me-2"
+              className="form-control me-2 navbar-input"
               type="search"
               placeholder="Search here..."
               aria-label="Search"

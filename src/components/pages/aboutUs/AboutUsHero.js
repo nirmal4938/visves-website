@@ -2,13 +2,16 @@ import React from "react";
 import img_ from "../../assets/images/aboutusImages/hero_page_wire.svg";
 import imagex from "../../assets/images/aboutusImages/about_us_hero_right_image.svg";
 import heroImage from "../../assets/images/hero_alt.png";
+import { useNavigate } from "react-router-dom";
+import arrowRightIcon from "../../assets/images/img_.svg";
 
 export const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className="hero-section">
-      <div className="wire">
+      {/* <div className="wire">
         <img src={img_} alt="Icon" />
-      </div>
+      </div> */}
       <div className="row d-flex">
         <div className="col-12 col-md-1"></div>
         <div className="col-12 col-md-5">
@@ -21,9 +24,16 @@ export const Hero = () => {
               reduce your costs and give your business the competitive edge it
               needs to succeed.
             </p>
-            <button type="button" className="brand-button">
-              Our products
-            </button>
+            <div>
+              <button
+                type="button"
+                className="brand-button"
+                onClick={() => navigate("/products")}
+              >
+                Our products
+                <img src={arrowRightIcon} alt="Icon" className="btn-icon" />
+              </button>
+            </div>
           </div>
         </div>
         <div className="col-12 col-md-6">

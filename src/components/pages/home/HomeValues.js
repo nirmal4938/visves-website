@@ -9,6 +9,30 @@ import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  console.log("rect", rect);
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+function onScroll() {
+  console.log("scrolling..");
+  var targetDiv = document.querySelector(".values-animate-text");
+  // var animatedText = document.querySelector(".values-animate-text");
+
+  if (isInViewport(targetDiv)) {
+    console.log("targetDiv", targetDiv);
+    targetDiv.classList.add("in-viewport");
+  } else {
+    targetDiv.classList.remove("in-viewport");
+  }
+}
 export const HomeValues = () => {
   let sliderRef = useRef(null);
   const next = () => {
@@ -17,7 +41,15 @@ export const HomeValues = () => {
   const previous = () => {
     sliderRef.slickPrev();
   };
-  useEffect(() => {}, []);
+
+  // Add scroll event listener
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
   const cards = [
     {
       title: "MANUFACTURING",

@@ -4,7 +4,7 @@ import { Navbar } from "./components/common/Navbar";
 import { Footer } from "./components/layout/Footer";
 import { Home } from "./components/pages/home";
 import { About } from "./components/pages/aboutUs";
-import "./components/styles/global.css";
+import "./components/styles/global.scss";
 import { Products } from "./components/pages/products";
 import { Services } from "./components/pages/services";
 import { Contact } from "./components/pages/contactus";

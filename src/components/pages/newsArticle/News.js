@@ -127,7 +127,7 @@ export const News = () => {
           <div className="search-advance">
             <div className="advance-search-title">Search Here</div>
             <hr className="divider" />
-            <div class="search-input">
+            <div className="search-input">
               <input
                 type="text"
                 className="form-control form-control-lg"

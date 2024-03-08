@@ -1,0 +1,50 @@
+.App {
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../assets/font/static/SpaceGrotesk-Medium.ttf") format("truetype"); /* Regular font */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../assets//font//static/SpaceGrotesk-Bold.ttf") format("truetype"); /* Bold font */
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+.brand-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0 29px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(105deg, #351ee0, #3f74ef);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 201px;
+
+  img {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    color: #351ee0; /* Inverted text color */
+    background-image: linear-gradient(
+      105deg,
+      white,
+      white
+    ); /* Inverted background gradient */
+    filter: brightness(90%);
+    img {
+      filter: invert(1); /* Invert the color of the SVG icon */
+    }
+  }
+}
