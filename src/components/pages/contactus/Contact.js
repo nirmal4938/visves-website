@@ -78,11 +78,15 @@ export const ContactUs = () => {
           </div>
           <div className="col-12 col-md-8 mt-4">
             <div className="location-section">
-              <img
-                src="https://via.placeholder.com/895x770"
-                className="img-fluid img-location"
-                alt="Location Map"
-              />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.7153583729423!2d72.1345822743764!3d21.752558062527708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f511df5e75683%3A0x1ff71af254c656c6!2s%F0%9F%8C%BA%20Iscon%20MEGACITY!5e0!3m2!1sen!2sin!4v1709813676844!5m2!1sen!2sin"
+                width="800"
+                height="660"
+                style={{ border: "0" }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>

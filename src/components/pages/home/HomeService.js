@@ -1,8 +1,10 @@
 import React from "react";
 import visonLeftImage from "../../assets/images/vision_home_left.svg";
 import img_ from "../../assets/images/img_.svg";
+import { useNavigate } from "react-router-dom";
 
 export const Service = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="service-section">
@@ -11,7 +13,11 @@ export const Service = () => {
             <h5 className="text-main">SERVICES</h5>
             <div className=" d-flex justify-content-between flex-column flex-md-row">
               <h2 className="text-title">We Provide</h2>
-              <button type="button" className="brand-button">
+              <button
+                type="button"
+                className="brand-button"
+                onClick={() => navigate("/products")}
+              >
                 Our Products
                 <img src={img_} alt="Icon" />
               </button>

@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <div className="hero-section">
       <div className="row d-flex">
-        <div className="col-12 col-md-2"></div>
+        {/* <div className="col-12 col-md-2"></div> */}
         <div className="col-12 col-md-5">
           <div className="hero-text-section">
             <h3 className="text-about">News</h3>
